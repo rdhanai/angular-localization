@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -56,6 +57,15 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "en": {
+              "localize": ["en"]
+            },
+            "fr": {
+              "localize": ["fr"]
+            },
+            "de": {
+              "localize": ["de"]
             }
           }
         },
@@ -67,6 +77,15 @@
           "configurations": {
             "production": {
               "browserTarget": "angular-localization:build:production"
+            },
+            "en": {
+              "browserTarget": "angular-localization:build:en"
+            },
+            "fr": {
+              "browserTarget": "angular-localization:build:fr"
+            },
+            "de": {
+              "browserTarget": "angular-localization:build:de"
             }
           }
         },
@@ -88,6 +107,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -118,7 +138,15 @@
             }
           }
         }
+      },
+      "i18n": {
+        "locales": {
+          "en": "src/translate/messages.en.xlf",
+          "fr": "src/translate/messages.fr.xlf",
+          "de": "src/translate/messages.de.xlf"
+        }
       }
-    }},
+    }
+  },
   "defaultProject": "angular-localization"
 }
